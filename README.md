@@ -192,6 +192,7 @@ Die genauen Einstellungen jedes Laufs stehen in `run_config.json`.
 Testvorhersagen je Modell und Bild sind unter `results/praktikum1_station1_adaptation/oxford_test/` enthalten; die Testkennzahlen lassen sich daraus nachrechnen.
 
 Einige ältere Berichte verweisen auf Dateien, die nicht im Repository liegen.
+Ziel dieses Projekts ist der Vergleich verschiedener Adaptationsverfahren für die Klassifikation von Hunde- und Katzenrassen.
 
 ## Lizenz
 
