@@ -1,0 +1,99 @@
+# Grundregel: alles ist gesperrt, nur ausdrücklich genannte Dateien werden freigegeben.
+/*
+
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/requirements.txt
+!/*.py
+
+# Werkzeuge
+!/tools/
+/tools/*
+!/tools/*.py
+
+# Datensatz: nur Listen und Beschreibungen ohne Bilder
+!/data/
+/data/*
+!/data/final_splits/
+!/data/dataset_expansion/
+/data/dataset_expansion/*
+!/data/dataset_expansion/augmentation_plans/
+/data/dataset_expansion/augmentation_plans/*
+!/data/dataset_expansion/augmentation_plans/20261106T110038Z_15000/
+/data/dataset_expansion/augmentation_plans/20261106T110038Z_15000/*
+!/data/dataset_expansion/augmentation_plans/20261106T110038Z_15000/AUGMENTATION_UND_VERGLEICH_PLAN.md
+!/data/dataset_expansion/augmented_versions/
+/data/dataset_expansion/augmented_versions/*
+!/data/dataset_expansion/augmented_versions/20261106T110038Z_15000/
+/data/dataset_expansion/augmented_versions/20261106T110038Z_15000/*
+!/data/dataset_expansion/augmented_versions/20261106T110038Z_15000/UEBERSICHT.md
+!/data/dataset_expansion/augmented_versions/20261106T110038Z_15000/allocation.csv
+!/data/dataset_expansion/augmented_versions/20261106T110038Z_15000/augmentation_config.json
+!/data/dataset_expansion/combined_versions/
+/data/dataset_expansion/combined_versions/*
+!/data/dataset_expansion/combined_versions/20261106T110038Z/
+/data/dataset_expansion/combined_versions/20261106T110038Z/*
+!/data/dataset_expansion/combined_versions/20261106T110038Z/AKTIVE_VERSION_UEBERSICHT.md
+
+# Trainingsläufe: Konfiguration und Verlauf, keine Modellgewichte
+!/results/
+/results/*
+!/results/20261106T110038Z_15000/
+
+# Auswertungen, Berichte und Diagramme
+!/results/praktikum1_station1_adaptation/
+/results/praktikum1_station1_adaptation/*
+!/results/praktikum1_station1_adaptation/*.md
+!/results/praktikum1_station1_adaptation/*.log
+!/results/praktikum1_station1_adaptation/diagramme/
+!/results/praktikum1_station1_adaptation/oxford_test/
+!/results/praktikum1_station1_adaptation/oxford_test_vorbereitung/
+!/results/praktikum1_station1_adaptation/vit_linear_probing_schritt1/
+!/results/praktikum1_station1_adaptation/vit_linear_probing_schritt2/
+!/results/praktikum1_station1_adaptation/vit_linear_probing_schritt3/
+!/results/praktikum1_station1_adaptation/vit_lora_schritt4/
+!/results/praktikum1_station1_adaptation/vit_lora_schritt5/
+!/results/praktikum1_station1_adaptation/resnet18_schritt1/
+!/results/praktikum1_station1_adaptation/diagramme_korrektur_20261125/
+/results/praktikum1_station1_adaptation/diagramme_korrektur_20261125/*
+!/results/praktikum1_station1_adaptation/diagramme_korrektur_20261125/ABSCHLUSSBERICHT.md
+!/results/praktikum1_station1_adaptation/diagramme_korrektur_20261125/datenquellen_korrektur.json
+!/results/praktikum1_station1_adaptation/diagramme_korrektur_20261125/tierbasierter_bootstrap/
+!/results/praktikum1_station1_adaptation/diagramme_qualitaetskontrolle_20261125/
+/results/praktikum1_station1_adaptation/diagramme_qualitaetskontrolle_20261125/*
+!/results/praktikum1_station1_adaptation/diagramme_qualitaetskontrolle_20261125/PRUEFBERICHT.md
+
+# Ab hier gilt immer: nicht hochladen, auch nicht in freigegebenen Ordnern
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+*.key
+*.pem
+*token*
+
+# Modellgewichte und Zwischenspeicher
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.zip
+*.parquet
+
+# Bilder aus Datensätzen (die Diagramme sind PNG und PDF)
+*.jpg
+*.jpeg
+*.JPEG
+*.webp
+
+# Technische Testläufe
+technischer_test/
+selbsttest*/
+
+# ImageNet-Nachweise und Listen mit ImageNet-Dateinamen bleiben lokal
+imagenet_*.csv
+gruppen_je_bild.csv
+vorhersagen_alle_modelle.csv
+**/validierungspruefung/vorhersagen_*.csv

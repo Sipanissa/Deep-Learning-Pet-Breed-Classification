@@ -1,0 +1,9 @@
+﻿PASS --check-only (finetune und frozen): zehn Klassen in fester Reihenfolge, Gradienten genau bei den trainierbaren Parametern
+PASS Unterbrechung nach Epoche 1; Checkpoint enthaelt Modell samt BatchNorm-Statistik, Optimizer, Epoche, Verlauf, Zufallszustaende
+PASS Wiederaufnahme in neuem Prozess bitgleich zum ununterbrochenen Lauf: Verlauf, Modell, Optimizer [[2.2765, 18.75, 1.6785, 42.1875, 0.4145], [0.8633, 95.8333, 1.2426, 68.75, 0.6773]]
+PASS finetune: alle 62 Parametertensoren (11.181.642 Parameter) veraendert, BatchNorm-Statistik in allen 20 Schichten aktualisiert; best_resnet18.pt ladbar
+PASS frozen: nur fc.weight und fc.bias (5.130 Parameter) veraendert; Backbone und BatchNorm-Statistik unveraendert
+INFO Tempo und Speicher, Batch 32, 0 Ladeprozesse {'sekunden_512_plus_128_val': 6.7, 'geschaetzte_epoche_minuten': 2.5, 'speicher': {'dediziert_spitze_gb': 3.34, 'gemeinsam_spitze_gb': 0.08, 'messpunkte': 11}}
+INFO Tempo und Speicher, Batch 32, 2 Ladeprozesse {'sekunden_512_plus_128_val': 17.0, 'geschaetzte_epoche_minuten': 6.2, 'speicher': {'dediziert_spitze_gb': 3.29, 'gemeinsam_spitze_gb': 0.08, 'messpunkte': 21}}
+PASS kein Oxford-Testbild geoeffnet; geoeffnete Bilddateien 671 | DirectML-Rueckfaelle: keine
+ALLES BESTANDEN

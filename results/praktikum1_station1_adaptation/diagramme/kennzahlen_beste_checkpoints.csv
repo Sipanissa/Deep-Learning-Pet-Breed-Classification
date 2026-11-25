@@ -1,0 +1,6 @@
+konfiguration;epochen_budget;beste_epoche;val_accuracy_prozent;richtig_von_1233;wilson95_unten;wilson95_oben;val_macro_f1;val_loss;trainierbare_parameter;parameter_gesamt;lora_rank;lora_alpha;alpha_durch_rank;trainingsdauer_s;mittel_s_je_epoche
+ViT-B/16 Linear Probing;30;11;96.6748;1192;95.52;97.54;0.973462;0.139279;7690;85806346;;;;637.2;0.2
+ViT-B/16 LoRA r = 4;5;1;97.1614;1198;96.08;97.95;0.977348;0.110225;155146;85953802;4;16.0;4.0;5009.8;1002.0
+ViT-B/16 LoRA r = 8;10;3;97.1614;1198;96.08;97.95;0.975997;0.136119;302602;86101258;8;16.0;2.0;7811.9;781.2
+ViT-B/16 LoRA r = 16;5;3;97.2425;1199;96.17;98.02;0.976568;0.145096;597514;86396170;16;16.0;1.0;4767.5;953.5
+ResNet18 Fine-Tuning;10;10;94.1606;1161;92.71;95.34;0.935866;0.272446;11181642;11181642;;;;1223.3;122.3

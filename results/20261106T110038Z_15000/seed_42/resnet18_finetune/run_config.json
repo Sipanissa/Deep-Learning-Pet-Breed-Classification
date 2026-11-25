@@ -1,0 +1,51 @@
+{
+  "model": "resnet18_finetune",
+  "dataset": {
+    "name": "20261106T110038Z_15000",
+    "folder": "data\\dataset_expansion\\augmented_versions\\20261106T110038Z_15000",
+    "train": "data\\dataset_expansion\\augmented_versions\\20261106T110038Z_15000\\train.csv",
+    "val": "data\\dataset_expansion\\augmented_versions\\20261106T110038Z_15000\\val.csv",
+    "test": "data\\dataset_expansion\\augmented_versions\\20261106T110038Z_15000\\test.csv"
+  },
+  "train_sha256": "48db896241f03243b1a3b73339d71cf5ed91d302d95527d9bfe48024993de08c",
+  "val_sha256": "4f4a266f61fc7319d521c244957734dcb6c7726d5f6a1c2cc6817831e8ce6819",
+  "test_sha256": "158e85fc7cf32cbecd75ebe89a913f91864e5494af9ef7150ab6f2107b174355",
+  "epochs": 10,
+  "batch_size": 32,
+  "learning_rate": 0.0001,
+  "seed": 42,
+  "online_flip": "off",
+  "resnet18": {
+    "architecture": "resnet18",
+    "weights": "ResNet18_Weights.IMAGENET1K_V1",
+    "mode": "finetune",
+    "classes": [
+      "British Shorthair",
+      "Russian Blue",
+      "Persian",
+      "Ragdoll",
+      "Bengal",
+      "Samoyed",
+      "Pomeranian",
+      "Keeshond",
+      "Great Pyrenees",
+      "Newfoundland"
+    ],
+    "head": "Linear(512, 10), torch default init",
+    "parameters": 11181642,
+    "trainable_parameters": 11181642,
+    "head_parameters": 5130
+  },
+  "head_learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "optimizer": "AdamWNoLerp (gleich torch.optim.AdamW, ohne lerp), Backbone und Kopf als zwei Gruppen",
+  "loss": "CrossEntropyLoss",
+  "selection": "best validation macro-F1",
+  "batchnorm": "train mode, statistics update",
+  "preprocessing": "ImageClassification(\n    crop_size=[224]\n    resize_size=[256]\n    mean=[0.485, 0.456, 0.406]\n    std=[0.229, 0.224, 0.225]\n    interpolation=InterpolationMode.BILINEAR\n)",
+  "train_images": 12768,
+  "val_images": 1233,
+  "frozen_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "directml": "AMD Radeon RX 6600",
+  "torch": "2.4.1+cpu"
+}

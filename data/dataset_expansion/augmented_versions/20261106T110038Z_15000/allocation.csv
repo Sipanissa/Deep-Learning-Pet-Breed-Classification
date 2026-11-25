@@ -1,0 +1,11 @@
+﻿klasse,train_original,zusaetzlich,train_gesamt,faktor_je_original,maximal_varianten_je_original,val,test
+British Shorthair,494,783,1277,1.59,2,119,100
+Russian Blue,627,650,1277,1.04,2,113,100
+Persian,940,336,1276,0.36,1,243,100
+Ragdoll,912,364,1276,0.4,1,258,100
+Bengal,446,831,1277,1.86,2,117,100
+Samoyed,303,974,1277,3.21,4,78,100
+Pomeranian,443,834,1277,1.88,2,123,100
+Keeshond,217,1060,1277,4.88,5,53,99
+Great Pyrenees,275,1002,1277,3.64,4,68,100
+Newfoundland,241,1036,1277,4.3,5,61,100

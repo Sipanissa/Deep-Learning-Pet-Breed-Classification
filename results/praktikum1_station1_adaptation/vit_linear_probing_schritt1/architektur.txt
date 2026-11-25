@@ -1,0 +1,16 @@
+EncoderBlock(
+  (ln_1): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+  (self_attention): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+  )
+  (dropout): Dropout(p=0.0, inplace=False)
+  (ln_2): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+  (mlp): MLPBlock(
+    (0): Linear(in_features=768, out_features=3072, bias=True)
+    (1): GELU(approximate='none')
+    (2): Dropout(p=0.0, inplace=False)
+    (3): Linear(in_features=3072, out_features=768, bias=True)
+    (4): Dropout(p=0.0, inplace=False)
+  )
+)
+768 3072 197 12 12

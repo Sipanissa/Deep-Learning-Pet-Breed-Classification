@@ -1,0 +1,36 @@
+Backbone auf: AMD Radeon RX 6600 | Kopf auf: CPU
+Datensatz 20261106T110038Z_15000: Training 12768, Validierung 1233; Test wird nicht geladen
+Merkmale berechnet: 12768 Bilder in 573s, gespeichert in results\vit_feature_cache\20261106T110038Z_15000\train_09f08cc88f2d7848.pt
+Merkmale berechnet: 1233 Bilder in 57s, gespeichert in results\vit_feature_cache\20261106T110038Z_15000\val_c55eb2dc4a6f473e.pt
+Epoch 01/30 | Train Loss 0.1889 | Train Acc 94.95% | Val Loss 0.1515 | Val Acc 95.13% | Val Macro-F1 0.9591 | bestes Modell | 0.3s
+Epoch 02/30 | Train Loss 0.0602 | Train Acc 98.26% | Val Loss 0.1370 | Val Acc 95.54% | Val Macro-F1 0.9636 | bestes Modell | 0.2s
+Epoch 03/30 | Train Loss 0.0387 | Train Acc 99.17% | Val Loss 0.1297 | Val Acc 96.11% | Val Macro-F1 0.9677 | bestes Modell | 0.2s
+Epoch 04/30 | Train Loss 0.0289 | Train Acc 99.46% | Val Loss 0.1338 | Val Acc 96.19% | Val Macro-F1 0.9685 | bestes Modell | 0.2s
+Epoch 05/30 | Train Loss 0.0221 | Train Acc 99.59% | Val Loss 0.1313 | Val Acc 96.03% | Val Macro-F1 0.9674 | 0.2s
+Epoch 06/30 | Train Loss 0.0176 | Train Acc 99.72% | Val Loss 0.1327 | Val Acc 96.03% | Val Macro-F1 0.9675 | 0.2s
+Epoch 07/30 | Train Loss 0.0140 | Train Acc 99.81% | Val Loss 0.1447 | Val Acc 95.78% | Val Macro-F1 0.9660 | 0.2s
+Epoch 08/30 | Train Loss 0.0117 | Train Acc 99.84% | Val Loss 0.1351 | Val Acc 96.03% | Val Macro-F1 0.9681 | 0.2s
+Epoch 09/30 | Train Loss 0.0096 | Train Acc 99.92% | Val Loss 0.1367 | Val Acc 96.19% | Val Macro-F1 0.9694 | bestes Modell | 0.2s
+Epoch 10/30 | Train Loss 0.0082 | Train Acc 99.93% | Val Loss 0.1433 | Val Acc 96.19% | Val Macro-F1 0.9700 | bestes Modell | 0.2s
+Epoch 11/30 | Train Loss 0.0068 | Train Acc 99.97% | Val Loss 0.1393 | Val Acc 96.67% | Val Macro-F1 0.9735 | bestes Modell | 0.2s
+Epoch 12/30 | Train Loss 0.0058 | Train Acc 99.98% | Val Loss 0.1436 | Val Acc 96.19% | Val Macro-F1 0.9696 | 0.2s
+Epoch 13/30 | Train Loss 0.0049 | Train Acc 99.98% | Val Loss 0.1453 | Val Acc 96.35% | Val Macro-F1 0.9710 | 0.2s
+Epoch 14/30 | Train Loss 0.0045 | Train Acc 99.98% | Val Loss 0.1498 | Val Acc 96.35% | Val Macro-F1 0.9713 | 0.2s
+Epoch 15/30 | Train Loss 0.0037 | Train Acc 99.98% | Val Loss 0.1483 | Val Acc 96.27% | Val Macro-F1 0.9708 | 0.3s
+Epoch 16/30 | Train Loss 0.0033 | Train Acc 99.99% | Val Loss 0.1606 | Val Acc 96.19% | Val Macro-F1 0.9697 | 0.2s
+Epoch 17/30 | Train Loss 0.0030 | Train Acc 99.99% | Val Loss 0.1624 | Val Acc 96.35% | Val Macro-F1 0.9705 | 0.2s
+Epoch 18/30 | Train Loss 0.0024 | Train Acc 100.00% | Val Loss 0.1650 | Val Acc 96.27% | Val Macro-F1 0.9701 | 0.2s
+Epoch 19/30 | Train Loss 0.0022 | Train Acc 100.00% | Val Loss 0.1681 | Val Acc 96.35% | Val Macro-F1 0.9705 | 0.3s
+Epoch 20/30 | Train Loss 0.0018 | Train Acc 99.99% | Val Loss 0.1738 | Val Acc 96.35% | Val Macro-F1 0.9708 | 0.2s
+Epoch 21/30 | Train Loss 0.0016 | Train Acc 100.00% | Val Loss 0.1640 | Val Acc 96.51% | Val Macro-F1 0.9713 | 0.2s
+Epoch 22/30 | Train Loss 0.0014 | Train Acc 100.00% | Val Loss 0.1722 | Val Acc 96.67% | Val Macro-F1 0.9725 | 0.2s
+Epoch 23/30 | Train Loss 0.0013 | Train Acc 100.00% | Val Loss 0.1738 | Val Acc 96.35% | Val Macro-F1 0.9700 | 0.2s
+Epoch 24/30 | Train Loss 0.0012 | Train Acc 100.00% | Val Loss 0.1795 | Val Acc 96.35% | Val Macro-F1 0.9700 | 0.2s
+Epoch 25/30 | Train Loss 0.0010 | Train Acc 100.00% | Val Loss 0.1827 | Val Acc 96.51% | Val Macro-F1 0.9713 | 0.2s
+Epoch 26/30 | Train Loss 0.0009 | Train Acc 100.00% | Val Loss 0.1957 | Val Acc 96.35% | Val Macro-F1 0.9700 | 0.2s
+Epoch 27/30 | Train Loss 0.0008 | Train Acc 100.00% | Val Loss 0.1911 | Val Acc 96.43% | Val Macro-F1 0.9704 | 0.2s
+Epoch 28/30 | Train Loss 0.0007 | Train Acc 100.00% | Val Loss 0.1969 | Val Acc 96.19% | Val Macro-F1 0.9692 | 0.2s
+Epoch 29/30 | Train Loss 0.0006 | Train Acc 100.00% | Val Loss 0.1930 | Val Acc 96.35% | Val Macro-F1 0.9696 | 0.2s
+Epoch 30/30 | Train Loss 0.0005 | Train Acc 100.00% | Val Loss 0.2038 | Val Acc 96.43% | Val Macro-F1 0.9709 | 0.2s
+Fertig. Beste Validierungs-Macro-F1 0.9735 in Epoche 11; Ausgabe: results\20261106T110038Z_15000\seed_42\vit_b16_linear_probe
+EXIT 0

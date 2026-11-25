@@ -1,0 +1,51 @@
+konfiguration;klasse;support;precision;recall;f1
+ViT-B/16 Linear Probing;British Shorthair;119;0.9515;0.8235;0.8829
+ViT-B/16 Linear Probing;Russian Blue;113;0.991;0.9735;0.9821
+ViT-B/16 Linear Probing;Persian;243;0.9597;0.9794;0.9695
+ViT-B/16 Linear Probing;Ragdoll;258;0.9188;0.9651;0.9414
+ViT-B/16 Linear Probing;Bengal;117;1.0;1.0;1.0
+ViT-B/16 Linear Probing;Samoyed;78;0.987;0.9744;0.9806
+ViT-B/16 Linear Probing;Pomeranian;123;1.0;1.0;1.0
+ViT-B/16 Linear Probing;Keeshond;53;1.0;1.0;1.0
+ViT-B/16 Linear Probing;Great Pyrenees;68;0.971;0.9853;0.9781
+ViT-B/16 Linear Probing;Newfoundland;61;1.0;1.0;1.0
+ViT-B/16 LoRA r = 4;British Shorthair;119;0.9612;0.8319;0.8919
+ViT-B/16 LoRA r = 4;Russian Blue;113;1.0;0.9823;0.9911
+ViT-B/16 LoRA r = 4;Persian;243;0.9874;0.9671;0.9771
+ViT-B/16 LoRA r = 4;Ragdoll;258;0.9107;0.9884;0.948
+ViT-B/16 LoRA r = 4;Bengal;117;1.0;1.0;1.0
+ViT-B/16 LoRA r = 4;Samoyed;78;1.0;0.9744;0.987
+ViT-B/16 LoRA r = 4;Pomeranian;123;1.0;1.0;1.0
+ViT-B/16 LoRA r = 4;Keeshond;53;1.0;1.0;1.0
+ViT-B/16 LoRA r = 4;Great Pyrenees;68;0.9577;1.0;0.9784
+ViT-B/16 LoRA r = 4;Newfoundland;61;1.0;1.0;1.0
+ViT-B/16 LoRA r = 8;British Shorthair;119;0.9333;0.8235;0.875
+ViT-B/16 LoRA r = 8;Russian Blue;113;0.9911;0.9823;0.9867
+ViT-B/16 LoRA r = 8;Persian;243;0.9757;0.9918;0.9837
+ViT-B/16 LoRA r = 8;Ragdoll;258;0.9331;0.9729;0.9526
+ViT-B/16 LoRA r = 8;Bengal;117;1.0;1.0;1.0
+ViT-B/16 LoRA r = 8;Samoyed;78;0.987;0.9744;0.9806
+ViT-B/16 LoRA r = 8;Pomeranian;123;1.0;0.9919;0.9959
+ViT-B/16 LoRA r = 8;Keeshond;53;1.0;1.0;1.0
+ViT-B/16 LoRA r = 8;Great Pyrenees;68;0.9714;1.0;0.9855
+ViT-B/16 LoRA r = 8;Newfoundland;61;1.0;1.0;1.0
+ViT-B/16 LoRA r = 16;British Shorthair;119;0.96;0.8067;0.8767
+ViT-B/16 LoRA r = 16;Russian Blue;113;0.9739;0.9912;0.9825
+ViT-B/16 LoRA r = 16;Persian;243;0.9756;0.9877;0.9816
+ViT-B/16 LoRA r = 16;Ragdoll;258;0.9304;0.9845;0.9567
+ViT-B/16 LoRA r = 16;Bengal;117;1.0;0.9915;0.9957
+ViT-B/16 LoRA r = 16;Samoyed;78;1.0;0.9744;0.987
+ViT-B/16 LoRA r = 16;Pomeranian;123;1.0;1.0;1.0
+ViT-B/16 LoRA r = 16;Keeshond;53;1.0;1.0;1.0
+ViT-B/16 LoRA r = 16;Great Pyrenees;68;0.9714;1.0;0.9855
+ViT-B/16 LoRA r = 16;Newfoundland;61;1.0;1.0;1.0
+ResNet18 Fine-Tuning;British Shorthair;119;0.885;0.8403;0.8621
+ResNet18 Fine-Tuning;Russian Blue;113;1.0;0.8938;0.9439
+ResNet18 Fine-Tuning;Persian;243;0.9872;0.9547;0.9707
+ResNet18 Fine-Tuning;Ragdoll;258;0.9361;0.9651;0.9504
+ResNet18 Fine-Tuning;Bengal;117;0.975;1.0;0.9873
+ResNet18 Fine-Tuning;Samoyed;78;0.8452;0.9103;0.8765
+ResNet18 Fine-Tuning;Pomeranian;123;0.9587;0.9431;0.9508
+ResNet18 Fine-Tuning;Keeshond;53;0.9636;1.0;0.9815
+ResNet18 Fine-Tuning;Great Pyrenees;68;0.8205;0.9412;0.8767
+ResNet18 Fine-Tuning;Newfoundland;61;0.9667;0.9508;0.9587

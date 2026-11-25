@@ -1,0 +1,14 @@
+INFO Modulnamen {'klasse': 'MultiheadAttention', 'parameter': ['in_proj_weight', 'in_proj_bias', 'out_proj.weight', 'out_proj.bias'], 'in_proj_weight': [2304, 768], 'aufteilung': 'Zeilen 0-767 Query, 768-1535 Key, 1536-2303 Value', 'beispiel': 'encoder.layers.encoder_layer_0.self_attention'}
+PASS trainierbar nur LoRA und Kopf {4: {'rank': 4, 'alpha': 8, 'scaling': 2.0, 'dropout': 0.1, 'targets': ['query', 'value'], 'lora_parameters': 147456, 'trainable_parameters': 155146}, 8: {'rank': 8, 'alpha': 16, 'scaling': 2.0, 'dropout': 0.1, 'targets': ['query', 'value'], 'lora_parameters': 294912, 'trainable_parameters': 302602}, 16: {'rank': 16, 'alpha': 32, 'scaling': 2.0, 'dropout': 0.1, 'targets': ['query', 'value'], 'lora_parameters': 589824, 'trainable_parameters': 597514}}
+PASS Korrektheit {'abweichung_B0_gegen_original': 3.5762786865234375e-07, 'abweichung_gegen_zusammengefuehrte_gewichte': 5.900859832763672e-06, 'key_unveraendert': True}
+PASS AdamWNoLerp gleich torch.optim.AdamW, Abweichung 1.1920928955078125e-07
+PASS Gradienten des ganzen Modells DirectML gegen CPU, max. relative Abweichung 3.2895946787903085e-05
+PASS Forward, Backward, 3 Schritte ohne CPU-Rueckfall; Loss [2.338, 1.8786, 1.46] | eingefroren unveraendert | alle 50 LoRA/Kopf-Tensoren veraendert
+PASS Validierung 64 Bilder: Loss 2.1586 Acc 23.4375 Macro-F1 0.2067
+PASS Checkpoint speichern und laden, Abweichung 0.0 Groesse 1228984
+INFO Reproduzierbarkeit DirectML [2.3380002975463867, 1.8785624504089355] [2.3380002975463867, 1.8785624504089355] identisch
+INFO Batch 8 {'gpu_speicher_spitze_gb': 6.77, 'messpunkte': 4, 'sekunden_pro_schritt': 0.37, 'bilder_pro_sekunde': 21.8, 'geschaetzte_epoche_minuten': 9.7, 'status': 'stabil'}
+INFO Batch 16 {'gpu_speicher_spitze_gb': 6.77, 'messpunkte': 7, 'sekunden_pro_schritt': 1.02, 'bilder_pro_sekunde': 15.7, 'geschaetzte_epoche_minuten': 13.5, 'status': 'stabil'}
+INFO Batch 32 {'gpu_speicher_spitze_gb': 6.77, 'messpunkte': 13, 'sekunden_pro_schritt': 2.51, 'bilder_pro_sekunde': 12.7, 'geschaetzte_epoche_minuten': 16.7, 'status': 'stabil'}
+PASS kein Oxford-Testbild geoeffnet; geoeffnete Bilddateien 96
+ALLES BESTANDEN

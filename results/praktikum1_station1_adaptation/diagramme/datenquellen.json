@@ -1,0 +1,197 @@
+{
+  "hinweis": "Alle Werte aus den genannten Dateien gelesen; Wilson-Intervalle aus den Zählwerten der Konfusionsmatrix berechnet; Parameter gesamt bei LoRA = ViT-B/16 mit Kopf + LoRA-Parameter aus run_config.json. Macro-F1-Intervalle: gespeicherter Bootstrap über einzelne Bilder (validierungspruefung/metriken_*.json). Intervalle über geschätzte Tiere: Tieridentifikation aus dem Namen im Bildtitel geschätzt, nicht verifiziert (tools/animal_bootstrap_validation.py). Alle Intervalle beschreiben die Stichprobenunsicherheit bei festem Checkpoint, nicht die Schwankung zwischen Trainingsläufen (ein Lauf je Konfiguration, Seed 42). 03, 04, 05, 08 und 08b zeichnet tools/correct_station1_diagrams.py, die übrigen tools/plot_station1_adaptation.py.",
+  "diagramme": [
+    {
+      "datei": "01_accuracy_verlauf",
+      "beschreibung": "Training- und Validierungs-Accuracy je Epoche; eigene x-Achse je Lauf entsprechend dem Budget",
+      "quellen": [
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/history.json",
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/history.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/history.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/history.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/history.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/training_log.csv"
+      ]
+    },
+    {
+      "datei": "02_loss_verlauf",
+      "beschreibung": "Training- und Validierungs-Loss je Epoche; eigene x-Achse je Lauf entsprechend dem Budget",
+      "quellen": [
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/history.json",
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/history.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/history.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/history.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/history.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/training_log.csv"
+      ]
+    },
+    {
+      "datei": "03_val_accuracy_vergleich",
+      "beschreibung": "Val-Accuracy-Verläufe und bester Checkpoint mit 95-%-Wilson-Intervall und 95-%-Bootstrap über geschätzte Tiere (Name im Bildtitel, nicht verifiziert)",
+      "quellen": [
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/best_resnet18.pt",
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/best_head.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/training_log.csv",
+        "results/praktikum1_station1_adaptation/diagramme_korrektur_20261125/tierbasierter_bootstrap/ergebnis.json"
+      ]
+    },
+    {
+      "datei": "04_val_macro_f1_vergleich",
+      "beschreibung": "Val-Macro-F1-Verläufe und bester Checkpoint mit gespeichertem 95-%-Bootstrap-Intervall über einzelne Bilder",
+      "quellen": [
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/best_resnet18.pt",
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/best_head.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/training_log.csv",
+        "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_lp.json",
+        "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r16.json",
+        "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r4.json",
+        "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r8.json",
+        "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_rn.json"
+      ]
+    },
+    {
+      "datei": "05_lora_raenge",
+      "beschreibung": "LoRA-Ränge: Accuracy (Wilson, Bootstrap über geschätzte Tiere), Macro-F1 (Bootstrap über Bilder), trainierbare Parameter, Dauer je Epoche mit Min. bis Max. innerhalb des Laufs",
+      "quellen": [
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/history.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/run_config.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/history.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/run_config.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/history.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/run_config.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/training_log.csv",
+        "results/praktikum1_station1_adaptation/diagramme_korrektur_20261125/tierbasierter_bootstrap/ergebnis.json",
+        "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r16.json",
+        "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r4.json",
+        "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r8.json"
+      ]
+    },
+    {
+      "datei": "06_konfusionsmatrix_lp",
+      "beschreibung": "Konfusionsmatrix ViT-B/16 Linear Probing, Validierung, bester Checkpoint; Zahlen = Bilder, Farbe = Zeilenanteil",
+      "quellen": [
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/best_head.pt"
+      ]
+    },
+    {
+      "datei": "06_konfusionsmatrix_r4",
+      "beschreibung": "Konfusionsmatrix ViT-B/16 LoRA r = 4, Validierung, bester Checkpoint; Zahlen = Bilder, Farbe = Zeilenanteil",
+      "quellen": [
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/best_lora.pt"
+      ]
+    },
+    {
+      "datei": "06_konfusionsmatrix_r8",
+      "beschreibung": "Konfusionsmatrix ViT-B/16 LoRA r = 8, Validierung, bester Checkpoint; Zahlen = Bilder, Farbe = Zeilenanteil",
+      "quellen": [
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/best_lora.pt"
+      ]
+    },
+    {
+      "datei": "06_konfusionsmatrix_r16",
+      "beschreibung": "Konfusionsmatrix ViT-B/16 LoRA r = 16, Validierung, bester Checkpoint; Zahlen = Bilder, Farbe = Zeilenanteil",
+      "quellen": [
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/best_lora.pt"
+      ]
+    },
+    {
+      "datei": "06_konfusionsmatrix_rn",
+      "beschreibung": "Konfusionsmatrix ResNet18 Fine-Tuning, Validierung, bester Checkpoint; Zahlen = Bilder, Farbe = Zeilenanteil",
+      "quellen": [
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/best_resnet18.pt"
+      ]
+    },
+    {
+      "datei": "06_konfusionsmatrizen_uebersicht",
+      "beschreibung": "Alle fünf Konfusionsmatrizen nebeneinander",
+      "quellen": [
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/best_resnet18.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/best_head.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/best_lora.pt"
+      ]
+    },
+    {
+      "datei": "07_f1_pro_klasse",
+      "beschreibung": "F1 je Klasse, Validierung, bester Checkpoint",
+      "quellen": [
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/best_resnet18.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/best_head.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/best_lora.pt"
+      ]
+    },
+    {
+      "datei": "08_dauer_und_komplexitaet",
+      "beschreibung": "Trainierbare und gesamte Parameter (log. Punktdiagramm), Gesamtdauer des Laufs, Dauer je Epoche mit Min. bis Max. innerhalb des Laufs; Linear Probing nicht im Epochenvergleich",
+      "quellen": [
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/history.json",
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/run_config.json",
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/history.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/run_config.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/history.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/run_config.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/history.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/run_config.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/training_log.csv",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/history.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/run_config.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/training_log.csv",
+        "results/praktikum1_station1_adaptation/vit_linear_probing_schritt3/training.log"
+      ]
+    },
+    {
+      "datei": "08b_macro_f1_gegen_parameter",
+      "beschreibung": "Val-Macro-F1 mit 95-%-Bootstrap über Bilder gegen trainierbare (gefüllt) und gesamte Parameter (hohl)",
+      "quellen": [
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/best_resnet18.pt",
+        "results/20261106T110038Z_15000/seed_42/resnet18_finetune/run_config.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/best_head.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/run_config.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/run_config.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/run_config.json",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/best_lora.pt",
+        "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/run_config.json",
+        "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_lp.json",
+        "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r16.json",
+        "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r4.json",
+        "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r8.json",
+        "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_rn.json"
+      ]
+    }
+  ]
+}

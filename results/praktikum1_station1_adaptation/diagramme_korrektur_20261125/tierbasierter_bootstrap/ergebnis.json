@@ -1,0 +1,78 @@
+{
+ "A_pruefbericht": {
+  "gruppen": 729,
+  "catza_tiere": 240,
+  "accuracy95": {
+   "lp": [
+    94.95282433186097,
+    98.12803438207567
+   ],
+   "r4": [
+    95.31358939972385,
+    98.6678994432353
+   ],
+   "r8": [
+    95.40601886001906,
+    98.62470466135889
+   ],
+   "r16": [
+    95.52877034876337,
+    98.63222190161562
+   ],
+   "rn": [
+    92.30150768925067,
+    95.81658074483087
+   ]
+  }
+ },
+ "B_bereinigt": {
+  "gruppen": 723,
+  "catza_tiere": 234,
+  "accuracy95": {
+   "lp": [
+    94.95931543349046,
+    98.13472265362115
+   ],
+   "r4": [
+    95.36645468181725,
+    98.63242343318409
+   ],
+   "r8": [
+    95.43502075891526,
+    98.62298372305081
+   ],
+   "r16": [
+    95.59052446688437,
+    98.64870561961624
+   ],
+   "rn": [
+    92.35092277765722,
+    95.72519083969466
+   ]
+  }
+ },
+ "accuracy": {
+  "lp": 96.67477696674777,
+  "r4": 97.16139497161394,
+  "r8": 97.16139497161394,
+  "r16": 97.24249797242499,
+  "rn": 94.16058394160584
+ },
+ "verfahren": {
+  "ziehungen": 4000,
+  "seed": 1,
+  "bilder": 1233,
+  "catza_bilder": 744,
+  "perzentile": [
+   2.5,
+   97.5
+  ],
+  "code": "tools/animal_bootstrap_validation.py",
+  "quellen": {
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/vorhersagen_alle_modelle.csv": "98d7e686dcb5317af4f0a75e368ac8b3f13fe9e4ac3296689ed07d805cdf87b8",
+   "data/dataset_expansion/combined_versions/20261106T110038Z/attribution.csv": "0f5df53ff71deed3bda2a80599432413c9730f73732bf01a07cbbd7b072581fb",
+   "data/dataset_expansion/combined_versions/20261106T110038Z/val.csv": "4f4a266f61fc7319d521c244957734dcb6c7726d5f6a1c2cc6817831e8ce6819"
+  },
+  "einschraenkung": "Geschaetzte Tieridentifikation nach Namen im Bildtitel (Catza), nicht verifiziert; andere Quellen ohne Tierangabe, jedes Bild zaehlt einzeln"
+ }
+}

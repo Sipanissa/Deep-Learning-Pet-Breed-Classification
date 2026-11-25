@@ -1,0 +1,14 @@
+PASS aktiver Zeiger 20261106T110038Z
+PASS Pfade und alle zehn Klassen combined_versions/20261106T110038Z (4898, 1233, 999)
+PASS Pfade und alle zehn Klassen combined_versions/20261104T194414Z (5817, 1491, 999)
+PASS Pfade und alle zehn Klassen augmented_versions/20261106T110038Z_15000 (12768, 1233, 999)
+PASS geschuetzte Dateien inkl. Oxford-Test 4152
+PASS Original-Splits und PetDataset unveraendert
+PASS 999 Oxford-Testbilder einzeln gegen geschuetzte Pruefsummen
+PASS ImageNet-Zustimmung und Auswahlliste
+PASS Lizenznachweis je aktivem Bild {'Stanford Dogs': 965, 'Oxford-IIIT Pet': 1936, 'FeliBreed v1; CC BY 4.0;': 5, 'Catza': 3702, 'Openverse (mostly Flickr': 129, 'Open Images V7 (Flickr p': 133, 'ImageNet (ILSVRC synsets': 260}
+PASS Manifest der Variante
+PASS gesicherte Nachweise und ZIP-Dateien
+PASS Python-Dateien lesbar 13
+PASS Kernmodule importierbar
+ALLES BESTANDEN

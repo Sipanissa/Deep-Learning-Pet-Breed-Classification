@@ -1,0 +1,204 @@
+[
+ {
+  "datei": "results/praktikum1_station1_adaptation/diagramme/03_val_accuracy_vergleich.pdf",
+  "korrektur": "Tierbasiertes Intervall, Legende und Einschränkungen ergänzt",
+  "quellen": [
+   "results/20261106T110038Z_15000/seed_42/resnet18_finetune/best_resnet18.pt",
+   "results/20261106T110038Z_15000/seed_42/resnet18_finetune/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/best_head.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/training_log.csv",
+   "results/praktikum1_station1_adaptation/diagramme_korrektur_20261125/tierbasierter_bootstrap/ergebnis.json"
+  ]
+ },
+ {
+  "datei": "results/praktikum1_station1_adaptation/diagramme/04_val_macro_f1_vergleich.pdf",
+  "korrektur": "Bootstrap-Intervalle und Einschränkungen ergänzt, Sterne mit dunklem Rand",
+  "quellen": [
+   "results/20261106T110038Z_15000/seed_42/resnet18_finetune/best_resnet18.pt",
+   "results/20261106T110038Z_15000/seed_42/resnet18_finetune/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/best_head.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/training_log.csv",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_lp.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r16.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r4.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r8.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_rn.json"
+  ]
+ },
+ {
+  "datei": "results/praktikum1_station1_adaptation/diagramme/05_lora_raenge.pdf",
+  "korrektur": "Unbelegte Fußnote entfernt, Macro-F1-Intervall und tierbasiertes Intervall ergänzt, Achsen angeglichen, Zahlenformat vereinheitlicht",
+  "quellen": [
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/history.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/history.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/history.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/training_log.csv",
+   "results/praktikum1_station1_adaptation/diagramme_korrektur_20261125/tierbasierter_bootstrap/ergebnis.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r16.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r4.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r8.json"
+  ]
+ },
+ {
+  "datei": "results/praktikum1_station1_adaptation/diagramme/08_dauer_und_komplexitaet.pdf",
+  "korrektur": "Punktdiagramme statt Log-Balken, Hardware berichtigt, Vergleichbarkeit gekennzeichnet, Linear Probing aus dem Epochenvergleich genommen, Textüberdeckung behoben",
+  "quellen": [
+   "results/20261106T110038Z_15000/seed_42/resnet18_finetune/history.json",
+   "results/20261106T110038Z_15000/seed_42/resnet18_finetune/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/resnet18_finetune/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/history.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/history.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/history.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/history.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/training_log.csv",
+   "results/praktikum1_station1_adaptation/vit_linear_probing_schritt3/training.log"
+  ]
+ },
+ {
+  "datei": "results/praktikum1_station1_adaptation/diagramme/08b_macro_f1_gegen_parameter.pdf",
+  "korrektur": "Gesamtparameter neben trainierbaren Parametern, Bootstrap-Intervalle und Einschränkungen ergänzt",
+  "quellen": [
+   "results/20261106T110038Z_15000/seed_42/resnet18_finetune/best_resnet18.pt",
+   "results/20261106T110038Z_15000/seed_42/resnet18_finetune/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/best_head.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/run_config.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_lp.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r16.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r4.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r8.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_rn.json"
+  ]
+ },
+ {
+  "datei": "results/praktikum1_station1_adaptation/oxford_test/diagramme/f1_pro_klasse.pdf",
+  "korrektur": "Achsenbeschriftung auf drei Nachkommastellen",
+  "quellen": [
+   "results/praktikum1_station1_adaptation/oxford_test/metriken_lp.json",
+   "results/praktikum1_station1_adaptation/oxford_test/metriken_r16.json",
+   "results/praktikum1_station1_adaptation/oxford_test/metriken_r4.json",
+   "results/praktikum1_station1_adaptation/oxford_test/metriken_r8.json",
+   "results/praktikum1_station1_adaptation/oxford_test/metriken_rn.json"
+  ]
+ },
+ {
+  "datei": "results/praktikum1_station1_adaptation/oxford_test/diagramme/test_vs_validierung.pdf",
+  "korrektur": "Beschriftung von der Achse gelöst, Legende und Einschränkungen ergänzt",
+  "quellen": [
+   "results/praktikum1_station1_adaptation/oxford_test/metriken_lp.json",
+   "results/praktikum1_station1_adaptation/oxford_test/metriken_r16.json",
+   "results/praktikum1_station1_adaptation/oxford_test/metriken_r4.json",
+   "results/praktikum1_station1_adaptation/oxford_test/metriken_r8.json",
+   "results/praktikum1_station1_adaptation/oxford_test/metriken_rn.json"
+  ]
+ },
+ {
+  "datei": "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/diagramme/test_vs_validierung.pdf",
+  "korrektur": "Selbstvergleich entfernt, Beschriftung von der Achse gelöst, Legende, tierbasiertes Intervall und Einschränkungen ergänzt",
+  "quellen": [
+   "results/praktikum1_station1_adaptation/diagramme_korrektur_20261125/tierbasierter_bootstrap/ergebnis.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_lp.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r16.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r4.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r8.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_rn.json"
+  ]
+ },
+ {
+  "datei": "bericht/abbildungen/lora_raenge.pdf",
+  "korrektur": "wie 05",
+  "quellen": [
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/history.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/history.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/history.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/training_log.csv",
+   "results/praktikum1_station1_adaptation/diagramme_korrektur_20261125/tierbasierter_bootstrap/ergebnis.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r16.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r4.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r8.json"
+  ]
+ },
+ {
+  "datei": "bericht/abbildungen/dauer_und_komplexitaet.pdf",
+  "korrektur": "wie 08",
+  "quellen": [
+   "results/20261106T110038Z_15000/seed_42/resnet18_finetune/history.json",
+   "results/20261106T110038Z_15000/seed_42/resnet18_finetune/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/resnet18_finetune/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/history.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/history.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/history.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/training_log.csv",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/history.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/training_log.csv",
+   "results/praktikum1_station1_adaptation/vit_linear_probing_schritt3/training.log"
+  ]
+ },
+ {
+  "datei": "bericht/abbildungen/f1_gegen_parameter.pdf",
+  "korrektur": "wie 08b",
+  "quellen": [
+   "results/20261106T110038Z_15000/seed_42/resnet18_finetune/best_resnet18.pt",
+   "results/20261106T110038Z_15000/seed_42/resnet18_finetune/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/best_head.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_linear_probe/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r16/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r4/run_config.json",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/best_lora.pt",
+   "results/20261106T110038Z_15000/seed_42/vit_b16_lora_r8/run_config.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_lp.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r16.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r4.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_r8.json",
+   "results/praktikum1_station1_adaptation/oxford_test_vorbereitung/validierungspruefung/metriken_rn.json"
+  ]
+ }
+]

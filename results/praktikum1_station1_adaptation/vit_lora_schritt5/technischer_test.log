@@ -1,0 +1,9 @@
+PASS --check-only
+PASS Unterbrechung nach Epoche 1; Checkpoint enthaelt Gewichte, Optimizer, Epoche, Verlauf, Zufallszustaende ['directml', 'loader', 'numpy', 'python', 'torch']
+PASS Wiederaufnahme in neuem Prozess bitgleich zum ununterbrochenen Lauf: Verlauf, Gewichte, Optimizer [[2.1723, 26.0417, 1.8589, 39.0625, 0.3399], [1.5832, 71.875, 1.4106, 71.875, 0.7292]]
+PASS nur 50 LoRA- und Kopftensoren (302.602 Parameter) trainierbar und veraendert; eingefrorene Gewichte im besten Modell gleich dem Ausgangsmodell
+PASS gespeichert: best_lora.pt, last_checkpoint.pt, training_log.csv, history.json, run_config.json {'learning_rate': 0.0005, 'head_learning_rate': 0.001, 'batch_size': 32, 'seed': 42, 'weight_decay': 0.01, 'optimizer': 'AdamWNoLerp (gleich torch.optim.AdamW, ohne lerp), zwei Gruppen', 'selection': 'best validation macro-F1', 'alpha': 16.0, 'dropout': 0.1, 'rank': 8, 'trainable': 302602}
+INFO Tempo 0 Ladeprozesse {'sekunden_256_bilder_plus_32_val': 18.2, 'geschaetzte_epoche_minuten': 14.8}
+INFO Tempo 2 Ladeprozesse {'sekunden_256_bilder_plus_32_val': 29.8, 'geschaetzte_epoche_minuten': 24.2}
+PASS kein Oxford-Testbild geoeffnet; geoeffnete Bilddateien 352 (Laeufe mit Ladeprozessen zaehlen nur den Hauptprozess)
+ALLES BESTANDEN

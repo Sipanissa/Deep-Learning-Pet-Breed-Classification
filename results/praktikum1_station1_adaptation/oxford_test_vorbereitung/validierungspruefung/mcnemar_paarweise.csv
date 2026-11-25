@@ -1,0 +1,11 @@
+modell_a;modell_b;nur_a_richtig;nur_b_richtig;p_exakt_zweiseitig;p_holm
+ViT-B/16 Linear Probing;ViT-B/16 LoRA r = 4;8;14;0.2863;1
+ViT-B/16 Linear Probing;ViT-B/16 LoRA r = 8;9;15;0.3075;1
+ViT-B/16 Linear Probing;ViT-B/16 LoRA r = 16;8;15;0.21;1
+ViT-B/16 Linear Probing;ResNet18 Fine-Tuning;54;23;0.0005388;0.003771
+ViT-B/16 LoRA r = 4;ViT-B/16 LoRA r = 8;9;9;1;1
+ViT-B/16 LoRA r = 4;ViT-B/16 LoRA r = 16;7;8;1;1
+ViT-B/16 LoRA r = 4;ResNet18 Fine-Tuning;53;16;9.095e-06;8.186e-05
+ViT-B/16 LoRA r = 8;ViT-B/16 LoRA r = 16;5;6;1;1
+ViT-B/16 LoRA r = 8;ResNet18 Fine-Tuning;53;16;9.095e-06;8.186e-05
+ViT-B/16 LoRA r = 16;ResNet18 Fine-Tuning;54;16;5.854e-06;5.854e-05

@@ -1,0 +1,59 @@
+{
+  "model": "vit_b16_lora_r4",
+  "dataset": {
+    "name": "20261106T110038Z_15000",
+    "folder": "data\\dataset_expansion\\augmented_versions\\20261106T110038Z_15000",
+    "train": "data\\dataset_expansion\\augmented_versions\\20261106T110038Z_15000\\train.csv",
+    "val": "data\\dataset_expansion\\augmented_versions\\20261106T110038Z_15000\\val.csv",
+    "test": "data\\dataset_expansion\\augmented_versions\\20261106T110038Z_15000\\test.csv"
+  },
+  "train_sha256": "48db896241f03243b1a3b73339d71cf5ed91d302d95527d9bfe48024993de08c",
+  "val_sha256": "4f4a266f61fc7319d521c244957734dcb6c7726d5f6a1c2cc6817831e8ce6819",
+  "test_sha256": "158e85fc7cf32cbecd75ebe89a913f91864e5494af9ef7150ab6f2107b174355",
+  "epochs": 5,
+  "batch_size": 32,
+  "learning_rate": 0.0005,
+  "seed": 42,
+  "online_flip": "off",
+  "lora": {
+    "model": "ViT-B/16",
+    "weights": "ViT_B_16_Weights.IMAGENET1K_V1",
+    "weights_url": "https://download.pytorch.org/models/vit_b_16-c867db91.pth",
+    "rank": 4,
+    "alpha": 16.0,
+    "scaling": 4.0,
+    "dropout": 0.1,
+    "targets": [
+      "query",
+      "value"
+    ],
+    "layers": 12,
+    "classes": [
+      "British Shorthair",
+      "Russian Blue",
+      "Persian",
+      "Ragdoll",
+      "Bengal",
+      "Samoyed",
+      "Pomeranian",
+      "Keeshond",
+      "Great Pyrenees",
+      "Newfoundland"
+    ],
+    "directml_safe_layernorm": true,
+    "init": "A: kaiming_uniform(a=sqrt(5)), B: zeros",
+    "trainable_parameters": 155146,
+    "lora_parameters": 147456
+  },
+  "head_learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "optimizer": "AdamWNoLerp (gleich torch.optim.AdamW, ohne lerp), zwei Gruppen",
+  "loss": "CrossEntropyLoss",
+  "selection": "best validation macro-F1",
+  "preprocessing": "ImageClassification(\n    crop_size=[224]\n    resize_size=[256]\n    mean=[0.485, 0.456, 0.406]\n    std=[0.229, 0.224, 0.225]\n    interpolation=InterpolationMode.BILINEAR\n)",
+  "train_images": 12768,
+  "val_images": 1233,
+  "frozen_sha256": "e5967821a6a1a01f5ac869a0ce1219a16810b94d70179186e19a820b240c0444",
+  "directml": "AMD Radeon RX 6600",
+  "torch": "2.4.1+cpu"
+}

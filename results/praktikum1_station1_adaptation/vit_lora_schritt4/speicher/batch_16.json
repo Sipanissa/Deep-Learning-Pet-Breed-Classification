@@ -1,0 +1,21 @@
+{
+  "batch": 16,
+  "rank": 8,
+  "trainable_parameters": 302602,
+  "status": "stabil",
+  "losses": [
+    2.3171,
+    1.9753,
+    1.6483,
+    1.3392,
+    1.059,
+    0.8104
+  ],
+  "sekunden_pro_schritt": 1.15,
+  "bilder_pro_sekunde": 13.9,
+  "geschaetzte_trainingsepoche_minuten": 15.3,
+  "validierung_sekunden_pro_batch": 0.26,
+  "dediziert_spitze_gb": 6.73,
+  "gemeinsam_spitze_gb": 1.2,
+  "messpunkte": 16
+}

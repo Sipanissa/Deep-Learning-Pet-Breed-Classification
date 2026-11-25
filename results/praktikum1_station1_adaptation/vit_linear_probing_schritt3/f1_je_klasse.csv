@@ -1,0 +1,11 @@
+﻿klasse,bilder,richtig,precision,recall,f1
+British Shorthair,119,98,0.9515,0.8235,0.8829
+Russian Blue,113,110,0.991,0.9735,0.9821
+Persian,243,238,0.9597,0.9794,0.9695
+Ragdoll,258,249,0.9188,0.9651,0.9414
+Bengal,117,117,1.0,1.0,1.0
+Samoyed,78,76,0.987,0.9744,0.9806
+Pomeranian,123,123,1.0,1.0,1.0
+Keeshond,53,53,1.0,1.0,1.0
+Great Pyrenees,68,67,0.971,0.9853,0.9781
+Newfoundland,61,61,1.0,1.0,1.0

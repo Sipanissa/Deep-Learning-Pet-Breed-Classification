@@ -1,0 +1,13 @@
+PASS Umgebung {'python': '3.11.9', 'betriebssystem': 'Windows-10-10.0.26300-SP0', 'torch': '2.4.1+cpu', 'torchvision': '0.19.1+cpu', 'pillow': '12.3.0', 'directml_geraet': 'AMD Radeon RX 6600\x00', 'directml_anzahl': 1, 'geraet': 'privateuseone:0'}
+PASS Gewichte https://download.pytorch.org/models/vit_b_16-c867db91.pth sha256 c867db91d3e12c6c Backbone identisch zum Checkpoint 150 Tensoren
+PASS Kopf 768->10; trainierbar {'heads.head.weight': 7680, 'heads.head.bias': 10} 7690 von 85806346
+PASS Datensatz 20261106T110038Z_15000 train 12768 val 1233 | val.csv bytegleich zur aktiven Version; Testbilder nicht geladen
+PASS Klassenreihenfolge und Labels {'reihenfolge': ['British Shorthair', 'Russian Blue', 'Persian', 'Ragdoll', 'Bengal', 'Samoyed', 'Pomeranian', 'Keeshond', 'Great Pyrenees', 'Newfoundland'], 'train': {'British Shorthair': 1277, 'Russian Blue': 1277, 'Persian': 1276, 'Ragdoll': 1276, 'Bengal': 1277, 'Samoyed': 1277, 'Pomeranian': 1277, 'Keeshond': 1277, 'Great Pyrenees': 1277, 'Newfoundland': 1277}, 'val': {'British Shorthair': 119, 'Russian Blue': 113, 'Persian': 243, 'Ragdoll': 258, 'Bengal': 117, 'Samoyed': 78, 'Pomeranian': 123, 'Keeshond': 53, 'Great Pyrenees': 68, 'Newfoundland': 61}}
+PASS Vorverarbeitung {'resize': 256, 'center_crop': 224, 'interpolation': 'bilinear', 'mean': (0.485, 0.456, 0.406), 'std': (0.229, 0.224, 0.225), 'max_abweichung_manuell': 0.0} Wertebereich -2.084 2.64
+PASS Forward und Backward auf DirectML; Loss 2.358 | Gradienten nur {'heads.head.weight': 324.6502990722656, 'heads.head.bias': 0.09552232176065445} | kein Parameter veraendert
+INFO Merkmale DirectML gegen CPU: maximale Abweichung 1.1056661605834961e-05
+PASS Forward und Backward ohne Rueckfall auf die CPU
+PASS AdamW-Schritt auf einer Wegwerf-Kopie des Kopfes laeuft
+INFO Warnungen ["The operator 'aten::lerp.Scalar_out' is not currently supported on the DML backend and will fall back to run on the CPU. This may have performance implications. (Triggered internally at C:\\__w\\1\\s\\pytorch-directml-plugin"]
+INFO Geschwindigkeit {'batch': 32, 'bild_laden_sekunden': 0.12, 'forward_sekunden': 0.85, 'grobe_schaetzung_epoche_minuten': 7.0}
+ALLES BESTANDEN

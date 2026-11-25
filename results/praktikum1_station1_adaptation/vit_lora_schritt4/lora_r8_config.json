@@ -1,0 +1,30 @@
+{
+  "model": "ViT-B/16",
+  "weights": "ViT_B_16_Weights.IMAGENET1K_V1",
+  "weights_url": "https://download.pytorch.org/models/vit_b_16-c867db91.pth",
+  "rank": 8,
+  "alpha": 16,
+  "scaling": 2.0,
+  "dropout": 0.1,
+  "targets": [
+    "query",
+    "value"
+  ],
+  "layers": 12,
+  "classes": [
+    "British Shorthair",
+    "Russian Blue",
+    "Persian",
+    "Ragdoll",
+    "Bengal",
+    "Samoyed",
+    "Pomeranian",
+    "Keeshond",
+    "Great Pyrenees",
+    "Newfoundland"
+  ],
+  "directml_safe_layernorm": true,
+  "init": "A: kaiming_uniform(a=sqrt(5)), B: zeros",
+  "trainable_parameters": 302602,
+  "lora_parameters": 294912
+}

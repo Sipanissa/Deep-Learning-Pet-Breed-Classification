@@ -1,0 +1,2 @@
+# Zeilenenden nie umwandeln, sonst stimmen die Prüfsummen nicht mehr
+* -text

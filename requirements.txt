@@ -1,0 +1,8 @@
+# Python 3.11.9, Windows 11. Nur die vom Sourcecode direkt importierten Pakete, Versionen aus der Projektumgebung.
+torch==2.4.1
+torchvision==0.19.1
+torch-directml==0.2.5.dev240914
+numpy==2.4.6
+pillow==12.3.0
+matplotlib==3.11.2
+ImageHash==4.3.2

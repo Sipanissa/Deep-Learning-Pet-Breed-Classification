@@ -1,0 +1,7 @@
+﻿ViT-B/16 Linear Probing: Accuracy 96.67 %, Macro-F1 0.9735 (1233 Bilder, Validierungssplit) | Validierung exakt reproduziert
+ViT-B/16 LoRA r = 4: Accuracy 97.16 %, Macro-F1 0.9773 (1233 Bilder, Validierungssplit) | Validierung exakt reproduziert
+ViT-B/16 LoRA r = 8: Accuracy 97.16 %, Macro-F1 0.9760 (1233 Bilder, Validierungssplit) | Validierung exakt reproduziert
+ViT-B/16 LoRA r = 16: Accuracy 97.24 %, Macro-F1 0.9766 (1233 Bilder, Validierungssplit) | Validierung exakt reproduziert
+ResNet18 Fine-Tuning: Accuracy 94.16 %, Macro-F1 0.9359 (1233 Bilder, Validierungssplit) | Validierung exakt reproduziert
+PASS alle fünf Checkpoints reproduzieren ihre gespeicherte Validierungs-Konfusionsmatrix exakt; 1233 Validierungsbilder, kein Testbild
+VALIDIERUNGSPRUEFUNG BESTANDEN

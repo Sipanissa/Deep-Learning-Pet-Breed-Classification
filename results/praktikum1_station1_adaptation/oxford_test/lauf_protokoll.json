@@ -1,0 +1,41 @@
+{
+  "start": "2026-11-21T14:25:49",
+  "ende": "2026-11-21T14:27:32",
+  "test_csv_sha256": "158e85fc7cf32cbecd75ebe89a913f91864e5494af9ef7150ab6f2107b174355",
+  "torch": "2.4.1+cpu",
+  "directml": "AMD Radeon RX 6600",
+  "modelle": {
+    "lp": {
+      "checkpoint_sha256": "08665b02b4b5e6feea533380890a33650900f938a2e8b70bdd638323076431da",
+      "modellzustand_vorher": "34b0b92e253ef055d6de122f6dc6c73762a0e40dd47f02dfb1dc485926a54be5",
+      "modellzustand_nachher": "34b0b92e253ef055d6de122f6dc6c73762a0e40dd47f02dfb1dc485926a54be5",
+      "sekunden": 31.4
+    },
+    "r4": {
+      "checkpoint_sha256": "d5455044f8299a6d5f2110e0ba719c6c47848b5e510ca67a93d88c3573f2b557",
+      "modellzustand_vorher": "3db7d41a20297f1b1eadd1c2410b1ea90fcc3025a110fc8fa38372a948e699b8",
+      "modellzustand_nachher": "3db7d41a20297f1b1eadd1c2410b1ea90fcc3025a110fc8fa38372a948e699b8",
+      "sekunden": 21.1
+    },
+    "r8": {
+      "checkpoint_sha256": "ffae15b775d0bb4bcbb0871b10d1003e6f62e5856dc75fdc39431f0f512bde4f",
+      "modellzustand_vorher": "fb782d617881153443e31993265a55691e18f2c092e6847536b242cc3b331c7f",
+      "modellzustand_nachher": "fb782d617881153443e31993265a55691e18f2c092e6847536b242cc3b331c7f",
+      "sekunden": 20.9
+    },
+    "r16": {
+      "checkpoint_sha256": "58801e530a5e1c1884c0124604feb73e117d0fb07c637e1b642d5aeb0d54b65f",
+      "modellzustand_vorher": "f7a4a87c6af6cddb4f842c32511b8194a0ef49e5d70f6fc1c776ddff4e0054f0",
+      "modellzustand_nachher": "f7a4a87c6af6cddb4f842c32511b8194a0ef49e5d70f6fc1c776ddff4e0054f0",
+      "sekunden": 21.0
+    },
+    "rn": {
+      "checkpoint_sha256": "b75c77843e6428c14d104033ae1535de60e6d70c8639634fad41cbee6405a39a",
+      "modellzustand_vorher": "d2a4cc83aa6fb4821e99526c57a8a4736b145bafad9022c992410257b837be0f",
+      "modellzustand_nachher": "d2a4cc83aa6fb4821e99526c57a8a4736b145bafad9022c992410257b837be0f",
+      "sekunden": 4.2
+    }
+  },
+  "bilder_nahe_imagenet": 35,
+  "bilder_gleiches_foto_imagenet": 14
+}

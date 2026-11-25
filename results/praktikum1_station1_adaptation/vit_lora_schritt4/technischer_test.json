@@ -1,0 +1,138 @@
+{
+  "modulnamen": {
+    "klasse": "MultiheadAttention",
+    "parameter": [
+      "in_proj_weight",
+      "in_proj_bias",
+      "out_proj.weight",
+      "out_proj.bias"
+    ],
+    "in_proj_weight": [
+      2304,
+      768
+    ],
+    "aufteilung": "Zeilen 0-767 Query, 768-1535 Key, 1536-2303 Value",
+    "beispiel": "encoder.layers.encoder_layer_0.self_attention"
+  },
+  "konfigurationen": {
+    "4": {
+      "rank": 4,
+      "alpha": 8,
+      "scaling": 2.0,
+      "dropout": 0.1,
+      "targets": [
+        "query",
+        "value"
+      ],
+      "lora_parameters": 147456,
+      "trainable_parameters": 155146
+    },
+    "8": {
+      "rank": 8,
+      "alpha": 16,
+      "scaling": 2.0,
+      "dropout": 0.1,
+      "targets": [
+        "query",
+        "value"
+      ],
+      "lora_parameters": 294912,
+      "trainable_parameters": 302602
+    },
+    "16": {
+      "rank": 16,
+      "alpha": 32,
+      "scaling": 2.0,
+      "dropout": 0.1,
+      "targets": [
+        "query",
+        "value"
+      ],
+      "lora_parameters": 589824,
+      "trainable_parameters": 597514
+    }
+  },
+  "korrektheit": {
+    "abweichung_B0_gegen_original": 3.5762786865234375e-07,
+    "abweichung_gegen_zusammengefuehrte_gewichte": 5.900859832763672e-06,
+    "key_unveraendert": true
+  },
+  "optimizer_abweichung_zu_torch_adamw": 1.1920928955078125e-07,
+  "gradientenvergleich_directml_cpu": {
+    "tensoren": 50,
+    "max_relative_abweichung": 3.2895946787903085e-05,
+    "referenz": "CPU mit eingebauter LayerNorm, LoRA-B zufaellig, Dropout 0"
+  },
+  "funktionstest": {
+    "trainbatch": 8,
+    "schritte": 3,
+    "loss": [
+      2.3380002975463867,
+      1.8786206245422363,
+      1.4600145816802979
+    ],
+    "cpu_rueckfaelle": {
+      "forward": [],
+      "backward": [],
+      "optimizer": [],
+      "validierung": []
+    },
+    "gradienten": "nur LoRA und Kopf; LoRA-A im ersten Schritt exakt 0, weil B mit 0 startet",
+    "geaenderte_trainierbare_tensoren": 50,
+    "eingefrorene_gewichte_unveraendert": true,
+    "validierung": {
+      "bilder": 64,
+      "loss": 2.1586084365844727,
+      "accuracy": 23.4375,
+      "macro_f1": 0.20666666666666664
+    }
+  },
+  "checkpoint": {
+    "datei": "technischer_test_checkpoint.pt",
+    "bytes": 1228984,
+    "abweichung_nach_laden": 0.0
+  },
+  "reproduzierbarkeit": {
+    "lauf1": [
+      2.3380002975463867,
+      1.8785624504089355
+    ],
+    "lauf2": [
+      2.3380002975463867,
+      1.8785624504089355
+    ],
+    "identisch": true
+  },
+  "speicher_und_zeit": {
+    "8": {
+      "gpu_speicher_spitze_gb": 6.77,
+      "messpunkte": 4,
+      "sekunden_pro_schritt": 0.37,
+      "bilder_pro_sekunde": 21.8,
+      "geschaetzte_epoche_minuten": 9.7,
+      "status": "stabil"
+    },
+    "16": {
+      "gpu_speicher_spitze_gb": 6.77,
+      "messpunkte": 7,
+      "sekunden_pro_schritt": 1.02,
+      "bilder_pro_sekunde": 15.7,
+      "geschaetzte_epoche_minuten": 13.5,
+      "status": "stabil"
+    },
+    "32": {
+      "gpu_speicher_spitze_gb": 6.77,
+      "messpunkte": 13,
+      "sekunden_pro_schritt": 2.51,
+      "bilder_pro_sekunde": 12.7,
+      "geschaetzte_epoche_minuten": 16.7,
+      "status": "stabil"
+    }
+  },
+  "geoeffnete_bilder": 96,
+  "testbilder_geoeffnet": 0,
+  "umgebung": {
+    "torch": "2.4.1+cpu",
+    "directml": "AMD Radeon RX 6600"
+  }
+}

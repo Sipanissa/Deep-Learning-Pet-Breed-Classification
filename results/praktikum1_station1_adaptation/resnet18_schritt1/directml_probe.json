@@ -1,0 +1,17 @@
+{
+  "datum": "2026-11-14",
+  "geraet": "AMD Radeon RX 6600, torch-directml 0.2.5.dev240914, torch 2.4.1",
+  "modell": "ResNet18 IMAGENET1K_V1, Kopf Linear(512, 10), train mode, Batch 16 aus der Trainingsvariante",
+  "loss_cpu": 2.549546718597412,
+  "loss_directml": 2.549546480178833,
+  "gradienten_relativ_gesamtnorm_cpu_vs_directml": 1.04e-4,
+  "gradienten_relativ_cpu_float32_vs_float64": 1.17e-4,
+  "gradienten_relativ_directml_vs_float64": 6.3e-5,
+  "groesste_abweichung_einzelwert_relativ": 5.4e-3,
+  "groesste_abweichung_tensor": "layer1.0.bn1.bias, Normabweichung 1.8e-3; float32-Rundung, DirectML liegt naeher an float64 als die CPU",
+  "batchnorm_laufende_statistik_abweichung": 4.8e-7,
+  "cpu_rueckfaelle": ["aten::lerp.Scalar_out in torch.optim.AdamW; behoben mit AdamWNoLerp"],
+  "frozen_modus": "Forward und Backward nur Kopf ohne Fehler",
+  "gpu_speicher_batch32_finetune_ohne_laden": {"dediziert_spitze_gb": 3.34, "gemeinsam_spitze_gb": 0.08, "sekunden_pro_schritt": 0.124},
+  "gpu_speicher_batch32_frozen": {"sekunden_pro_schritt": 0.022}
+}

@@ -1,0 +1,59 @@
+{
+  "dataset": "20261106T110038Z",
+  "train_sha256": "20cf29d61ca47bb27c043811d2ca1723247282b8d08aff4e74a733875ecd07e6",
+  "val_sha256": "4f4a266f61fc7319d521c244957734dcb6c7726d5f6a1c2cc6817831e8ce6819",
+  "test_sha256": "158e85fc7cf32cbecd75ebe89a913f91864e5494af9ef7150ab6f2107b174355",
+  "base_seed": 20261106,
+  "extra_train_images": 7870,
+  "total_examples": 15000,
+  "ranges": {
+    "flip_probability": 0.5,
+    "rotation_degrees": [
+      -10,
+      10
+    ],
+    "crop_area": [
+      0.85,
+      1.0
+    ],
+    "crop_position": [
+      0.25,
+      0.75
+    ],
+    "crop_ratio": [
+      0.9,
+      1.1
+    ],
+    "brightness": [
+      0.85,
+      1.15
+    ],
+    "contrast": [
+      0.85,
+      1.15
+    ],
+    "saturation": [
+      0.9,
+      1.1
+    ],
+    "blur_probability": 0.1,
+    "blur_radius": [
+      0.3,
+      1.0
+    ]
+  },
+  "jpeg_quality": 95,
+  "subsampling": "4:4:4",
+  "min_side": 224,
+  "excluded_operations": [
+    "hue",
+    "grayscale",
+    "vertical flip",
+    "erasing",
+    "mixup",
+    "cutmix"
+  ],
+  "python": "3.11.9",
+  "pillow": "12.3.0",
+  "planned_at": "2026-11-06T11:52:46+00:00"
+}

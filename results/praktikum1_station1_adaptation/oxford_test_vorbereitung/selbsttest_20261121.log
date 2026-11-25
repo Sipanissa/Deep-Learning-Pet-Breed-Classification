@@ -1,0 +1,10 @@
+﻿PASS Trainingssperre: Optimizer und backward werden abgewiesen
+ViT-B/16 Linear Probing: Accuracy 10.00 %, Macro-F1 0.0182 (50 Bilder, synthetischen Testsatz (Selbsttest))
+ViT-B/16 LoRA r = 4: Accuracy 10.00 %, Macro-F1 0.0200 (50 Bilder, synthetischen Testsatz (Selbsttest))
+ViT-B/16 LoRA r = 8: Accuracy 10.00 %, Macro-F1 0.0182 (50 Bilder, synthetischen Testsatz (Selbsttest))
+ViT-B/16 LoRA r = 16: Accuracy 10.00 %, Macro-F1 0.0182 (50 Bilder, synthetischen Testsatz (Selbsttest))
+ResNet18 Fine-Tuning: Accuracy 10.00 %, Macro-F1 0.0304 (50 Bilder, synthetischen Testsatz (Selbsttest))
+PASS keine Oxford-Testbilder geöffnet; geöffnet nur 50 synthetische Bilder
+PASS Ausgaben vollständig: Vorhersagen mit Bild-IDs, Kennzahlen, Tabelle, McNemar, Diagramme; Gewichte unverändert
+PASS finaler Lauf verlangt die Freigabe OXFORD-TEST-EINMALIG
+SELBSTTEST BESTANDEN

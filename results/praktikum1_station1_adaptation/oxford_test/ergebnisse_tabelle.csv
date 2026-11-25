@@ -1,0 +1,6 @@
+konfiguration;beste_epoche;val_accuracy;val_macro_f1;test_richtig;test_n;test_accuracy;acc_wilson95_unten;acc_wilson95_oben;test_macro_f1;f1_bootstrap95_unten;f1_bootstrap95_oben;test_macro_precision;test_macro_recall;accuracy_ohne_imagenet_naehe;macro_f1_ohne_imagenet_naehe;entfernt
+ViT-B/16 Linear Probing;11;96.6748;0.973462;966;999;96.6967;95.4;97.64;0.967043;0.9553;0.9775;0.967697;0.96698;96.5768;0.966008;35
+ViT-B/16 LoRA r = 4;1;97.1614;0.977348;970;999;97.0971;95.86;97.97;0.970996;0.9604;0.9809;0.972203;0.97097;96.9917;0.969928;35
+ViT-B/16 LoRA r = 8;3;97.1614;0.975997;973;999;97.3974;96.21;98.22;0.974062;0.9636;0.9834;0.974776;0.97397;97.3029;0.973161;35
+ViT-B/16 LoRA r = 16;3;97.2425;0.976568;973;999;97.3974;96.21;98.22;0.974059;0.9634;0.9839;0.975026;0.97398;97.3029;0.973199;35
+ResNet18 Fine-Tuning;10;94.1606;0.935866;929;999;92.993;91.24;94.42;0.928642;0.9115;0.9435;0.93271;0.92997;93.0498;0.929662;35

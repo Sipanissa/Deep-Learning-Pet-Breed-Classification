@@ -1,0 +1,2 @@
+data\external_sources\stanford_dogs\Images\n02112350-keeshond\n02112350_464.jpg
+data\external_sources\stanford_dogs\Images\n02112350-keeshond\n02112350_10023.jpg

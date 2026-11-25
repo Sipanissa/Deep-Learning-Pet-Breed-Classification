@@ -1,0 +1,37 @@
+Backbone auf: AMD Radeon RX 6600 | Kopf auf: CPU
+Datensatz 20261106T110038Z_15000: Training 12768, Validierung 1233; Test wird nicht geladen
+CHECK OK: Batch (32, 3, 224, 224), Loss 2.4697; kein Optimierungsschritt, nichts gespeichert
+PASS --check-only
+Backbone auf: AMD Radeon RX 6600 | Kopf auf: CPU
+Datensatz 20261106T110038Z_15000: Training 320, Validierung 100; Test wird nicht geladen
+Merkmale berechnet: 320 Bilder in 13s, gespeichert in results\praktikum1_station1_adaptation\vit_linear_probing_schritt2\technischer_test\lauf_a\feature_cache\train_e0918f23c07ba295.pt
+Merkmale berechnet: 100 Bilder in 5s, gespeichert in results\praktikum1_station1_adaptation\vit_linear_probing_schritt2\technischer_test\lauf_a\feature_cache\val_c426c29d937cbb1d.pt
+Epoch 01/2 | Train Loss 1.6857 | Train Acc 57.19% | Val Loss 0.9784 | Val Acc 92.00% | Val Macro-F1 0.9187 | bestes Modell | 0.0s
+Epoch 02/2 | Train Loss 0.6736 | Train Acc 91.56% | Val Loss 0.4435 | Val Acc 94.00% | Val Macro-F1 0.9385 | bestes Modell | 0.0s
+Fertig. Beste Validierungs-Macro-F1 0.9385 in Epoche 2; Ausgabe: results\praktikum1_station1_adaptation\vit_linear_probing_schritt2\technischer_test\lauf_a
+Backbone auf: AMD Radeon RX 6600 | Kopf auf: CPU
+Datensatz 20261106T110038Z_15000: Training 320, Validierung 100; Test wird nicht geladen
+Merkmale berechnet: 320 Bilder in 14s, gespeichert in results\praktikum1_station1_adaptation\vit_linear_probing_schritt2\technischer_test\lauf_b\feature_cache\train_e0918f23c07ba295.pt
+Merkmale berechnet: 100 Bilder in 5s, gespeichert in results\praktikum1_station1_adaptation\vit_linear_probing_schritt2\technischer_test\lauf_b\feature_cache\val_c426c29d937cbb1d.pt
+Epoch 01/2 | Train Loss 1.6857 | Train Acc 57.19% | Val Loss 0.9784 | Val Acc 92.00% | Val Macro-F1 0.9187 | bestes Modell | 0.0s
+Epoch 02/2 | Train Loss 0.6736 | Train Acc 91.56% | Val Loss 0.4435 | Val Acc 94.00% | Val Macro-F1 0.9385 | bestes Modell | 0.0s
+Fertig. Beste Validierungs-Macro-F1 0.9385 in Epoche 2; Ausgabe: results\praktikum1_station1_adaptation\vit_linear_probing_schritt2\technischer_test\lauf_b
+PASS zwei Laeufe mit gleichem Seed identisch, Merkmale jeweils neu berechnet [0.9187, 0.9385]
+Backbone auf: AMD Radeon RX 6600 | Kopf auf: CPU
+Datensatz 20261106T110038Z_15000: Training 320, Validierung 100; Test wird nicht geladen
+Merkmale aus Cache: results\praktikum1_station1_adaptation\vit_linear_probing_schritt2\technischer_test\lauf_a\feature_cache\train_e0918f23c07ba295.pt (320 Bilder)
+Merkmale aus Cache: results\praktikum1_station1_adaptation\vit_linear_probing_schritt2\technischer_test\lauf_a\feature_cache\val_c426c29d937cbb1d.pt (100 Bilder)
+Epoch 01/2 | Train Loss 1.6857 | Train Acc 57.19% | Val Loss 0.9784 | Val Acc 92.00% | Val Macro-F1 0.9187 | bestes Modell | 0.0s
+Epoch 02/2 | Train Loss 0.6736 | Train Acc 91.56% | Val Loss 0.4435 | Val Acc 94.00% | Val Macro-F1 0.9385 | bestes Modell | 0.0s
+Fertig. Beste Validierungs-Macro-F1 0.9385 in Epoche 2; Ausgabe: results\praktikum1_station1_adaptation\vit_linear_probing_schritt2\technischer_test\lauf_a
+PASS erneuter Lauf liest den Cache und ergibt dieselben Werte
+PASS Dateien gespeichert; Optimizer verwaltet nur Kopfgewichte 10x768 und Bias 10
+PASS Cache gegen direkte Berechnung, maximale Abweichung 0.0 | Merkmale+Kopf gegen vollen Forward 0.0
+PASS Kopf hat sich veraendert (max 0.0188 ), Backbone im Lauf und beim Laden unveraendert
+Backbone auf: AMD Radeon RX 6600 | Kopf auf: CPU
+Datensatz 20261106T110038Z_15000: Training 64, Validierung 30; Test wird nicht geladen
+Epoch 01/1 | Train Loss 2.2857 | Train Acc 12.50% | Val Loss 1.9840 | Val Acc 43.33% | Val Macro-F1 0.4100 | bestes Modell | 2.4s
+Fertig. Beste Validierungs-Macro-F1 0.4100 in Epoche 1; Ausgabe: results\praktikum1_station1_adaptation\vit_linear_probing_schritt2\technischer_test\lauf_online
+PASS Modus ohne Cache laeuft
+PASS kein Oxford-Testbild geoeffnet; geoeffnete Bilddateien 452
+ALLES BESTANDEN
