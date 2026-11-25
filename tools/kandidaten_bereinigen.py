@@ -27,7 +27,7 @@ def used_paths():
 
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--ausfuehren',action='store_true'); a=ap.parse_args()
-    assert (ROOT/'pet_dataset.py').exists(),'bitte aus dem Projekt-Hauptordner starten'
+    assert (ROOT/'src/pet_dataset.py').exists(),'bitte aus dem Projekt-Hauptordner starten'
     used=used_paths(); present=[]; missing=0; sizes=collections.Counter(); counts=collections.Counter()
     # Erst prüfen: nichts löschen, was genutzt oder verändert wurde
     for r in rows(LIST):

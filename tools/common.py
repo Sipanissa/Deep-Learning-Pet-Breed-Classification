@@ -1,4 +1,4 @@
-"""Shared helpers for the tools; import this first, it makes the project root importable. Run tools from the project root."""
+"""Shared helpers for the tools; import this first, it makes the src folder importable. Run tools from the project root."""
 import csv
 import hashlib
 import json
@@ -10,7 +10,7 @@ from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / 'data/dataset_expansion'
-sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / 'src'))
 
 from pet_dataset import CLASS_NAMES  # noqa: E402
 

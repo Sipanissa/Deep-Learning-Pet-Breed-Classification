@@ -63,7 +63,7 @@ def augmentation_sample(dataset,n):
         out=tmp/'out'/source.name; train=read(out/'train.csv')
         assert len(train)==len(read(Path(dataset['train'])))+len(rows) and sha256(out/'val.csv')==sha256(dataset['val']) and sha256(out/'test.csv')==sha256(dataset['test'])
         manifest=read(out/'augmentation_manifest.csv'); assert all(min(int(m['width']),int(m['height']))>=224 for m in manifest)
-        for script in ('train_resnet18.py',):
+        for script in ('src/train_resnet18.py',):
             run=subprocess.run([sys.executable,'-X','utf8',script,'--dataset',str(out),'--online-flip','off','--check-only'],capture_output=True,text=True,encoding='utf-8')
             assert run.returncode==0,run.stderr[-500:]
             print('E2E',script,[l for l in run.stdout.splitlines() if l.startswith('CHECK train') or l.startswith('CHECK OK')][-1][:60],flush=True)

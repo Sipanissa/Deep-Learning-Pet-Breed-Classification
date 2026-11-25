@@ -41,7 +41,7 @@ def main():
     # Geschützte Dateien und Original-Splits prüfen
     protected=json.loads((BASE/'protected_hashes.json').read_text(encoding='utf-8'))
     assert protected_unchanged(protected); print('PASS geschuetzte Dateien inkl. Oxford-Test',len(protected),flush=True)
-    for f,digest in {'data/final_splits/train.csv':'39064ab53f87','data/final_splits/val.csv':'a0619d34f355','data/final_splits/test.csv':'158e85fc7cf3','pet_dataset.py':'39447a48b183'}.items(): assert sha(ROOT/f).startswith(digest),f
+    for f,digest in {'data/final_splits/train.csv':'39064ab53f87','data/final_splits/val.csv':'a0619d34f355','data/final_splits/test.csv':'158e85fc7cf3','src/pet_dataset.py':'39447a48b183'}.items(): assert sha(ROOT/f).startswith(digest),f
     print('PASS Original-Splits und PetDataset unveraendert',flush=True)
     # Jedes der 999 Testbilder einzeln prüfen
     test=read(ROOT/'data/final_splits/test.csv'); assert len(test)==999 and all('oxford-iiit-pet' in r['path'].replace('\\','/') for r in test)
@@ -61,7 +61,7 @@ def main():
     assert (BASE/'activation_20261106.log').exists(); print('PASS gesicherte Nachweise und ZIP-Dateien',flush=True)
     # Alle Python-Dateien müssen lesbar sein
     bad=[];n=0
-    for p in list(ROOT.glob('*.py'))+list(ROOT.glob('tools/*.py')):
+    for p in list(ROOT.glob('src/*.py'))+list(ROOT.glob('tools/*.py')):
         n+=1
         try: ast.parse(p.read_text(encoding='utf-8'))
         except SyntaxError as e: bad.append((p.name,str(e)))

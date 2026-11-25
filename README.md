@@ -73,41 +73,110 @@ Vollständige Werte: [Ergebnistabelle](results/praktikum1_station1_adaptation/ox
 
 ## Projektstruktur
 
-| Pfad | Inhalt |
-|---|---|
-| `pet_dataset.py`, `dataset_paths.py` | Klassen, Datensatz und Pfade |
-| `vit_linear_probe.py`, `vit_lora.py` | ViT-B/16 mit neuem Kopf, LoRA |
-| `train_vit_linear_probe.py`, `train_vit_lora.py`, `train_resnet18_adaptation.py` | Training der fünf Konfigurationen |
-| `train_resnet18.py` | früheres ResNet18-Training, nicht Teil des Vergleichs |
-| `evaluate_station1_oxford_test.py` | einmalige Testauswertung |
-| `tools/` | Prüfungen, Augmentation, Diagramme |
-| `data/final_splits/` | ursprüngliche Aufteilung mit der Liste der 999 Testbilder |
-| `data/dataset_expansion/` | Beschreibung der verwendeten Datensatzversionen |
-| `results/20261106T110038Z_15000/seed_42/` | Konfiguration und Verlauf je Lauf |
-| `results/praktikum1_station1_adaptation/` | Berichte, Diagramme, Testergebnisse |
+```text
+Deep-Learning-Pet-Breed-Classification/
+├── README.md
+├── requirements.txt
+├── src/                                   Quellcode
+│   ├── pet_dataset.py                     Klassen und Datensatz
+│   ├── dataset_paths.py                   Pfade und gemeinsame Einstellungen
+│   ├── vit_linear_probe.py                ViT-B/16 mit neuem Kopf
+│   ├── vit_lora.py                        ViT-B/16 mit LoRA
+│   ├── train_vit_linear_probe.py          Training Linear Probing
+│   ├── train_vit_lora.py                  Training LoRA
+│   ├── train_resnet18_adaptation.py       Training ResNet18
+│   ├── train_resnet18.py                  früheres ResNet18-Training, nicht Teil des Vergleichs
+│   └── evaluate_station1_oxford_test.py   einmalige Testauswertung
+├── tools/                                 Prüfungen, Augmentation, Diagramme
+├── data/
+│   ├── final_splits/                      ursprüngliche Aufteilung mit den 999 Testbildern
+│   └── dataset_expansion/                 Beschreibung der Datensatzversionen
+└── results/
+    ├── 20261106T110038Z_15000/seed_42/    Konfiguration und Verlauf je Lauf
+    └── praktikum1_station1_adaptation/    Berichte, Diagramme, Testergebnisse
+```
+
+Ältere Berichte unter `results/` nennen die Skripte noch ohne `src/`. Sie beschreiben den Stand ihrer Entstehung und wurden nicht geändert.
 
 ## Installation
 
-Windows 11 mit Python 3.11 und einer DirectML-fähigen Grafikkarte:
+Voraussetzungen: Windows 11, Python 3.11 und eine DirectML-fähige Grafikkarte.
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-```
+1. Repository herunterladen:
+
+   ```powershell
+   git clone https://github.com/Sipanissa/Deep-Learning-Pet-Breed-Classification.git
+   cd Deep-Learning-Pet-Breed-Classification
+   ```
+
+2. Umgebung anlegen:
+
+   ```powershell
+   python -m venv .venv
+   ```
+
+3. Pakete installieren:
+
+   ```powershell
+   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+   ```
 
 `requirements.txt` nennt die Pakete, die der Sourcecode direkt importiert, in den verwendeten Versionen.
 
 ## Training
 
-Alle Befehle im Projektordner starten. Voraussetzung ist die Datensatzvariante unter `data/dataset_expansion/augmented_versions/20261106T110038Z_15000/` mit Bildern und CSV-Listen.
+Alle Befehle im Hauptordner des Projekts starten, nicht in `src/`. Voraussetzung ist die Datensatzvariante unter `data/dataset_expansion/augmented_versions/20261106T110038Z_15000/` mit Bildern und CSV-Listen.
+
+**ViT-B/16 Linear Probing**
 
 ```powershell
-.\.venv\Scripts\python.exe -X utf8 train_vit_linear_probe.py --epochs 30 --batch-size 32 --learning-rate 0.001 --seed 42
-.\.venv\Scripts\python.exe -X utf8 train_vit_lora.py --rank 8 --epochs 10 --batch-size 32 --learning-rate 0.0005 --head-learning-rate 0.001 --lora-alpha 16 --lora-dropout 0.1 --weight-decay 0.01 --seed 42
-.\.venv\Scripts\python.exe -X utf8 train_resnet18_adaptation.py --mode finetune --epochs 10 --batch-size 32 --learning-rate 0.0001 --head-learning-rate 0.001 --weight-decay 0.01 --seed 42
+.\.venv\Scripts\python.exe -X utf8 src/train_vit_linear_probe.py `
+  --epochs 30 --batch-size 32 --learning-rate 0.001 --seed 42
 ```
 
-Für Rang 4 und 16 gilt derselbe LoRA-Aufruf mit `--rank 4` oder `--rank 16` und `--epochs 5`. Die genauen Einstellungen jedes Laufs stehen in `run_config.json`.
+**ViT-B/16 LoRA, Rang 4**
+
+```powershell
+.\.venv\Scripts\python.exe -X utf8 src/train_vit_lora.py `
+  --rank 4 --epochs 5 --batch-size 32 `
+  --learning-rate 0.0005 --head-learning-rate 0.001 `
+  --lora-alpha 16 --lora-dropout 0.1 --weight-decay 0.01 --seed 42
+```
+
+**ViT-B/16 LoRA, Rang 8**
+
+```powershell
+.\.venv\Scripts\python.exe -X utf8 src/train_vit_lora.py `
+  --rank 8 --epochs 10 --batch-size 32 `
+  --learning-rate 0.0005 --head-learning-rate 0.001 `
+  --lora-alpha 16 --lora-dropout 0.1 --weight-decay 0.01 --seed 42
+```
+
+**ViT-B/16 LoRA, Rang 16**
+
+```powershell
+.\.venv\Scripts\python.exe -X utf8 src/train_vit_lora.py `
+  --rank 16 --epochs 5 --batch-size 32 `
+  --learning-rate 0.0005 --head-learning-rate 0.001 `
+  --lora-alpha 16 --lora-dropout 0.1 --weight-decay 0.01 --seed 42
+```
+
+**ResNet18 Fine-Tuning**
+
+```powershell
+.\.venv\Scripts\python.exe -X utf8 src/train_resnet18_adaptation.py `
+  --mode finetune --epochs 10 --batch-size 32 `
+  --learning-rate 0.0001 --head-learning-rate 0.001 `
+  --weight-decay 0.01 --seed 42
+```
+
+**Prüfung ohne Training:** Mit `--check-only` prüft ein Trainingsskript Daten und Modell mit einem Batch und speichert nichts:
+
+```powershell
+.\.venv\Scripts\python.exe -X utf8 src/train_vit_lora.py --rank 8 --check-only
+```
+
+Die genauen Einstellungen jedes Laufs stehen in `run_config.json`.
 
 **Testauswertung:** Sie wurde einmalig durchgeführt und soll nicht wiederholt werden. Das Skript bricht ab, wenn der Ergebnisordner bereits existiert.
 

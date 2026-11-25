@@ -5,7 +5,11 @@
 !/.gitattributes
 !/README.md
 !/requirements.txt
-!/*.py
+
+# Quellcode
+!/src/
+/src/*
+!/src/*.py
 
 # Werkzeuge
 !/tools/

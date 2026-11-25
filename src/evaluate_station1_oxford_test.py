@@ -33,7 +33,7 @@ import torch
 import torch_directml
 from torch.utils.data import DataLoader
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from pet_dataset import CLASS_NAMES, PetDataset  # noqa: E402
 
